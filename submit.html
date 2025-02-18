@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Charter House Cars</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            text-align: center;
+            animation: fadeInBg 1.5s ease-in-out;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #555;
+            margin-top: 0;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes fadeInBg {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .whatsapp-chat, .call-us {
+    display: inline-block;
+    margin: 10px;
+}
+
+.whatsapp-btn, .call-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px; /* Same width */
+            height: 60px; /* Same height */
+            border-radius: 50px;
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .call-btn {
+            background-color: #ff3b30; /* Red for call button */
+        }
+
+        .whatsapp-btn:hover, .call-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-chat, .call-us {
+            position: relative; /* Keeps buttons in flow */
+            margin: 20px; /* Adds spacing between buttons */
+        }
+   </style>
+</head>
+<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <div class="container">
+        <h1>Thank You for Choosing CHARTERHOUSECARS</h1>
+        <h2>Your form has been successfully submitted!</h2>
+        <!-- Contact Section with WhatsApp Icon -->
+        <section id="contact">
+            <div class="whatsapp-chat">
+                <a href="https://wa.me/message/6GOCSDYA2UXDL1" target="_blank" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp">Chat with us</i>
+                </a>
+            </div>
+            <!-- Call Us Now Button -->
+            <div class="call-us">
+                <a href="#" class="call-btn" id="callButton">
+                    <i class="fas fa-phone-alt"></i> Call Us Now
+                </a>
+            </div>
+
+            <!-- JavaScript for Call Button -->
+            <script>
+                document.getElementById("callButton").addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevents default anchor behavior
+                    window.location.href = "tel:01483962169"; // Opens the dial pad directly
+                });
+            </script>
+
+        </section>
+
+    </div>
+</body>
+</html>
